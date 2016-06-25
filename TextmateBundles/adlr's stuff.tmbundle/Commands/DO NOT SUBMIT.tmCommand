@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>echo -n "DO NOT SUBMIT "</string>
+	<key>input</key>
+	<string>none</string>
+	<key>name</key>
+	<string>DO NOT SUBMIT</string>
+	<key>output</key>
+	<string>afterSelectedText</string>
+	<key>scope</key>
+	<string>source.c, source.objc, source.c++, source.objc++</string>
+	<key>tabTrigger</key>
+	<string>dns</string>
+	<key>uuid</key>
+	<string>926F14A8-14F6-4AA0-9B9F-90C1E83F8005</string>
+</dict>
+</plist>

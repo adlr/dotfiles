@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>echo -n "// TODO($USER): "</string>
+	<key>input</key>
+	<string>none</string>
+	<key>name</key>
+	<string>todo</string>
+	<key>output</key>
+	<string>afterSelectedText</string>
+	<key>scope</key>
+	<string>source.c, source.objc, source.c++, source.objc++, source.java</string>
+	<key>tabTrigger</key>
+	<string>todo</string>
+	<key>uuid</key>
+	<string>B74EBC26-FA4F-45F1-980B-B663E0274CCD</string>
+</dict>
+</plist>

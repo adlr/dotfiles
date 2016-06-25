@@ -1,0 +1,9 @@
+[submodule "emacs.d/plugins/column-enforce-mode"]
+	path = emacs.d/plugins/column-enforce-mode
+	url = https://github.com/jordonbiondo/column-enforce-mode.git
+[submodule "emacs.d/plugins/dtrt-indent"]
+	path = emacs.d/plugins/dtrt-indent
+	url = https://github.com/jscheid/dtrt-indent.git
+[submodule "emacs.d/plugins/yasnippet"]
+	path = emacs.d/plugins/yasnippet
+	url = https://github.com/capitaomorte/yasnippet

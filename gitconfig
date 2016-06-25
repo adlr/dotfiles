@@ -1,0 +1,45 @@
+[user]
+  name = Andrew de los Reyes
+	email = adlr@chromium.org
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+
+[alias]
+  st = status
+  di = diff
+  dic = diff --cached
+  co = checkout
+  ci = commit
+  br = branch
+  sta = stash
+  revert = checkout HEAD
+  lso = ls-files -o --exclude-standard
+
+[sendemail]
+    smtpencryption = tls
+    smtpserver = smtp.gmail.com
+    smtpuser = adlr@gmail.com
+    smtpserverport = 587
+    from = andrew-vger@gizmolabs.org
+
+[gc]
+
+[url "ssh://jeans.mtv.corp.google.com//usr/local/google/home/adlr/chronos-git/"]
+  insteadOf = jeans-chronos:
+[sendemail]
+	smtpserver = smtp.gmail.com
+	smtpserverport = 587
+	smtpencryption = tls
+	smtpuser = adlr@gmail.com
+[core]
+	deltaBaseCacheLimit = 1G
+[http]
+	cookiefile = /usr/local/google/home/adlr/.gitcookies
+
+[url "persistent-https://chrome-internal.git.corp.google.com"]
+        insteadof = https://chrome-internal.googlesource.com
+[url "persistent-https://chromium.git.corp.google.com"]
+        insteadof = https://chromium.googlesource.com
