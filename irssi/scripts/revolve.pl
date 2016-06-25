@@ -82,7 +82,7 @@ sub summarize {
     @summarized = ();
     foreach my $part (qw/Joins Parts Quits Nicks/) {
         if (scalar @{$door{$part}}) {
-            push @summarized, "\%W$part:\%n " . join(', ', @{$door{$part}});
+            push @summarized, "\%C$part:\%n " . join(', ', @{$door{$part}});
         }
     }
 
