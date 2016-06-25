@@ -41,4 +41,7 @@ then
       ~/Library/Application\ Support/TextMate/Bundles
 fi
 
+echo "put this in your crontab:"
+echo "10 4 * * * /home/adlr/dotfiles/clear_dead_mosh_sessions.sh"
+
 echo "All done. Use chsh to change shell."
