@@ -345,3 +345,7 @@ and() {
 }
 
 export STY=1  # Allow tmux to set window title
+
+crouton_open_port() {
+  iptables -A INPUT -p tcp --dport $1 -j ACCEPT
+}
