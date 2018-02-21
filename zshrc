@@ -325,6 +325,7 @@ export PATH="/Users/adlr/narwhal/bin:$PATH"
 # CrOS ssh command
 alias cr="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -l root"
 alias serve="$HOME/Code/python-http/SimpleHTTPServerWithUpload.py"
+alias t="tmux attach || tmux"
 
 if [ "$TERM" = "screen" ]; then
   export TERM=screen-256color
