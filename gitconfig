@@ -39,7 +39,3 @@
 [http]
 	cookiefile = /usr/local/google/home/adlr/.gitcookies
 
-[url "persistent-https://chrome-internal.git.corp.google.com"]
-        insteadof = https://chrome-internal.googlesource.com
-[url "persistent-https://chromium.git.corp.google.com"]
-        insteadof = https://chromium.googlesource.com
