@@ -350,3 +350,5 @@ export STY=1  # Allow tmux to set window title
 crouton_open_port() {
   iptables -A INPUT -p tcp --dport $1 -j ACCEPT
 }
+
+alias rvpn="sudo openvpn --config ~/Documents/rivos_vpn.txt --auth-user-pass ~/Documents/rivos_vpn.password"
