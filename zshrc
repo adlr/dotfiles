@@ -41,7 +41,7 @@ setopt prompt_subst
 PROMPT="$PR_GREEN%m$PR_NO_COLOUR%(0#.$PR_LIGHT_RED.)%#$PR_NO_COLOUR "
 RPROMPT='$PR_BLUE%~$PR_YELLOW$(git_prompt_info)$PR_NO_COLOUR'
 export EDITOR="emacs -nw"
-export PATH="/Applications/Graphviz.app/Contents/MacOS:/usr/local/google/home/adlr/depot_tools:$PATH"
+export PATH="/Applications/Graphviz.app/Contents/MacOS:$HOME/depot_tools:$PATH"
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 export PATH="${PATH}:/opt/local/bin:${HOME}/bin"
