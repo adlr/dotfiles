@@ -39,3 +39,5 @@
 [http]
 	cookiefile = /usr/local/google/home/adlr/.gitcookies
 
+[init]
+	defaultBranch = main
