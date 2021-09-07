@@ -352,3 +352,6 @@ crouton_open_port() {
 }
 
 alias rvpn="sudo openvpn --config ~/Documents/rivos_vpn.txt --auth-user-pass ~/Documents/rivos_vpn.password"
+
+source $HOME/.cargo/env
+
