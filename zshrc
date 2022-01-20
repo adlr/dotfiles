@@ -352,6 +352,10 @@ crouton_open_port() {
 }
 
 alias rvpn="sudo openvpn --config ~/Documents/rivos_vpn.txt --auth-user-pass ~/Documents/rivos_vpn.password"
+alias c2="google-chrome --user-data-dir=$(readlink -f ~/chrome-vc-data/)"
+alias mrivos="mosh --server 'MOSH_SERVER_NETWORK_TMOUT=604800 mosh-server' rivos"
+alias mosh="/usr/bin/mosh --server 'MOSH_SERVER_NETWORK_TMOUT=604800 mosh-server'"
+alias msw="LANG=C.UTF-8 /usr/bin/mosh -p 60150:60159 --server 'MOSH_SERVER_NETWORK_TMOUT=604800 mosh-server' swproto"
 
 source $HOME/.cargo/env
 
