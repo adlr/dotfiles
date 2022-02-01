@@ -80,6 +80,11 @@ note_report()
 
 preexec()
 {
+  if [[ $(uname) != "Darwin" ]]; then
+    print -Pn "\e]0;%~ - $1 - ${COLUMNS}x${LINES}\a"
+  else
+    print -Pn "\e]0;%~ - $*\a"
+  fi
   if [ "x$TTY" != "x" ]; then
     note_remind="$SECONDS"
     note_ignore=""
