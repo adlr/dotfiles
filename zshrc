@@ -364,3 +364,4 @@ alias msw="LANG=C.UTF-8 /usr/bin/mosh -p 60150:60159 --server 'MOSH_SERVER_NETWO
 
 source $HOME/.cargo/env
 
+alias open="xdg-open"
