@@ -2,6 +2,6 @@ cd ~/.ssh/
 ssh-keygen -f github -t rsa
 # push key to github
 cd ~
-git clone --recursive git@github.com:adlr/dotfiles.git
+GIT_SSH_COMMAND="ssh -i ~/.ssh/github" git clone --recursive git@github.com:adlr/dotfiles.git
 cd dotfiles
 ./install.sh
