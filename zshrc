@@ -44,6 +44,9 @@ export EDITOR="emacs -nw"
 export PATH="/Applications/Graphviz.app/Contents/MacOS:$HOME/depot_tools:$PATH"
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
+# Show exit status on failure
+PROMPT="%(?..%B$PR_RED(%?%)$PR_NO_COLOUR%b)$PROMPT"
+
 export PATH="${PATH}:/opt/local/bin:${HOME}/bin"
 
 a1=/mnt/ext/adlr/chromeos
@@ -362,6 +365,11 @@ alias mrivos="mosh --server 'MOSH_SERVER_NETWORK_TMOUT=604800 mosh-server' rivos
 alias mosh="/usr/bin/mosh --server 'MOSH_SERVER_NETWORK_TMOUT=604800 mosh-server'"
 alias msw="LANG=C.UTF-8 /usr/bin/mosh -p 60150:60159 --server 'MOSH_SERVER_NETWORK_TMOUT=604800 mosh-server' swproto"
 
-source $HOME/.cargo/env
+if [ -f "$HOME/.cargo/env" ]; then
+  source $HOME/.cargo/env
+fi
+
 
 alias open="xdg-open"
+
+if [ -e /home/adlr/.nix-profile/etc/profile.d/nix.sh ]; then . /home/adlr/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
