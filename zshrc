@@ -365,11 +365,13 @@ alias mrivos="mosh --server 'MOSH_SERVER_NETWORK_TMOUT=604800 mosh-server' rivos
 alias mosh="/usr/bin/mosh --server 'MOSH_SERVER_NETWORK_TMOUT=604800 mosh-server'"
 alias msw="LANG=C.UTF-8 /usr/bin/mosh -p 60150:60159 --server 'MOSH_SERVER_NETWORK_TMOUT=604800 mosh-server' swproto"
 
-if [ -f "$HOME/.cargo/env" ]; then
-  source $HOME/.cargo/env
-fi
-
+[[ -e "$HOME/.cargo/env" ]] && source $HOME/.cargo/env
 
 alias open="xdg-open"
+
+alias sshp="ssh -o PreferredAuthentications=password -o PubkeyAuthentication=no"
+
+export DENO_INSTALL="/home/adlr/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
 
 if [ -e /home/adlr/.nix-profile/etc/profile.d/nix.sh ]; then . /home/adlr/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
