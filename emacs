@@ -78,20 +78,11 @@
 ;; no more startup message (splash screen)
 (setq inhibit-startup-message t)
 (custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- )
-(custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "White" :foreground "Black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 140 :width normal :foundry "apple" :family "Bitstream_Vera_Sans_Mono")))))
-
-(set-face-background 'default "color-231")
-(set-face-foreground 'default "color-16")
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes '(adwaita)))
 
 ;; bar cursor
 
@@ -113,11 +104,6 @@
 (require 'dtrt-indent)
 (dtrt-indent-mode 1)
 
-(unless window-system
-  (xterm-mouse-mode 1)
-  (global-set-key [mouse-4] (lambda () (interactive) (scroll-down 1)))
-  (global-set-key [mouse-5]  (lambda () (interactive) (scroll-up 1))))
-
 (global-set-key "\C-j" 'dabbrev-expand)
 ;; don't let python-mode take over C-j:
 (add-hook 'python-mode-hook (lambda () (local-unset-key (kbd "C-j"))))
@@ -133,11 +119,6 @@
 (require 'yasnippet)
 (setq yas-snippet-dirs '("~/.emacs.d/snippets"))
 (yas-global-mode 1)
-
-(add-to-list 'load-path
-              "~/.emacs.d/plugins/column-enforce-mode")
-(require 'column-enforce-mode)
-(add-hook 'prog-mode-hook 'column-enforce-mode)
 
 ;; Auto indent pasted code
 
@@ -155,3 +136,9 @@
 		  (indent-region (region-beginning) (region-end) nil))))))
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
