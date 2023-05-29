@@ -147,3 +147,4 @@
 
 
 (setq-default indent-tabs-mode nil)  ;; Only indent with spaces
+(setq sentence-end-double-space nil)  ;; one space after periods
