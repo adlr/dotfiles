@@ -394,3 +394,4 @@ unset __conda_setup
 EOF
 
 alias conda_init="source ~/.adlr_conda_init"
+export MOSH_TITLE_NOPREFIX=1
