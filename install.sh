@@ -3,9 +3,9 @@
 FILES="emacs gitconfig zshrc emacs.d tmux.conf irssi"
 DOTFILES_DIR=$(cd $(dirname "$0") && pwd)
 
-read -p "adlr's Freenode password:" freenodepass
+#read -p "adlr's Freenode password:" freenodepass
 
-echo "Freenode	adlr	$freenodepass	PLAIN" > ~/dotfiles/irssi/sasl.auth
+#echo "Freenode	adlr	$freenodepass	PLAIN" > ~/dotfiles/irssi/sasl.auth
 
 echo updating dot file symlinks
 
@@ -40,6 +40,10 @@ then
   ln -s ~/dotfiles/TextmateBundles \
       ~/Library/Application\ Support/TextMate/Bundles
 fi
+
+# Set up ghostty
+
+ln -s $HOME/dotfiles/ghostty $HOME/.config/ghostty
 
 echo "put this in your crontab:"
 echo "10 4 * * * /home/adlr/dotfiles/clear_dead_mosh_sessions.sh"

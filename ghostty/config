@@ -1,0 +1,7 @@
+#font-family = "Noto Sans Mono"
+#font-size = 11
+theme = dark:Adwaita Dark,light:Adwaita
+copy-on-select = clipboard
+app-notifications = no-clipboard-copy
+font-feature = -calt
+cursor-style-blink = false
