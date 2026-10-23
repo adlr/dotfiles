@@ -395,3 +395,6 @@ EOF
 
 alias conda_init="source ~/.adlr_conda_init"
 export MOSH_TITLE_NOPREFIX=1
+export PATH="$HOME/.npm-global/bin:$PATH"
+alias vpn_up="netbird up -m https://netbird.rosaiclabs.com"
+alias vpn_down="netbird down"

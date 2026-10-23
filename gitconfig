@@ -1,6 +1,6 @@
 [user]
   name = Andrew de los Reyes
-  email = adlr@gmail.com
+	email = adlr@chromium.org
 
 [color]
   diff = auto
@@ -36,8 +36,57 @@
 	smtpuser = adlr@gmail.com
 [core]
 	deltaBaseCacheLimit = 1G
-[http]
-	cookiefile = /usr/local/google/home/adlr/.gitcookies
-
 [init]
 	defaultBranch = main
+[includeIf "gitdir:~/WCode/"]
+	path = ~/WCode/.gitconfig
+[credential "https://android.googlesource.com"]
+	helper = 
+	helper = luci
+	useHttpPath = yes
+[credential "https://aomedia.googlesource.com"]
+	helper = 
+	helper = luci
+	useHttpPath = yes
+[credential "https://beto-core.googlesource.com"]
+	helper = 
+	helper = luci
+	useHttpPath = yes
+[credential "https://boringssl.googlesource.com"]
+	helper = 
+	helper = luci
+	useHttpPath = yes
+[credential "https://chromium.googlesource.com"]
+	helper = 
+	helper = luci
+	useHttpPath = yes
+[credential "https://chrome-internal.googlesource.com"]
+	helper = 
+	helper = luci
+	useHttpPath = yes
+[credential "https://dawn.googlesource.com"]
+	helper = 
+	helper = luci
+	useHttpPath = yes
+[credential "https://pdfium.googlesource.com"]
+	helper = 
+	helper = luci
+	useHttpPath = yes
+[credential "https://quiche.googlesource.com"]
+	helper = 
+	helper = luci
+	useHttpPath = yes
+[credential "https://skia.googlesource.com"]
+	helper = 
+	helper = luci
+	useHttpPath = yes
+[credential "https://swiftshader.googlesource.com"]
+	helper = 
+	helper = luci
+	useHttpPath = yes
+[credential "https://webrtc.googlesource.com"]
+	helper = 
+	helper = luci
+	useHttpPath = yes
+[merge]
+	conflictStyle = zdiff3

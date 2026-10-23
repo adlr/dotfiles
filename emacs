@@ -77,14 +77,6 @@
 
 ;; no more startup message (splash screen)
 (setq inhibit-startup-message t)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-enabled-themes '(adwaita-white))
- '(custom-safe-themes
-   '("7c6e42ea2b275325cf7f01c4c80cdc5913e43ff8a84c9a8cc28844862f73e68c" "ff95aefa5809f7206152912009321c8697e71600964dcd6f0191bae221f98a08" default)))
 
 ;; bar cursor
 
@@ -148,3 +140,9 @@
 
 (setq-default indent-tabs-mode nil)  ;; Only indent with spaces
 (setq sentence-end-double-space nil)  ;; one space after periods
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages '(csv-mode)))
