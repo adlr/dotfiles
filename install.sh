@@ -45,7 +45,9 @@ fi
 
 ln -s $HOME/dotfiles/ghostty $HOME/.config/ghostty
 
+ln -s $HOME/dotfiles/bashrc.d $HOME/.bashrc.d
+
 echo "put this in your crontab:"
 echo "10 4 * * * /home/adlr/dotfiles/clear_dead_mosh_sessions.sh"
 
-echo "All done. Use chsh to change shell."
+echo "All done. Use chsh to change shell if desired."
