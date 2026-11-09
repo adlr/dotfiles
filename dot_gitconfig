@@ -1,0 +1,30 @@
+[user]
+  name = Andrew de los Reyes
+  email = adlr@gmail.com
+
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+
+[alias]
+  st = status
+  di = diff
+  dic = diff --cached
+  co = checkout
+  ci = commit
+  br = branch
+  sta = stash
+  revert = checkout HEAD
+  lso = ls-files -o --exclude-standard
+
+[gc]
+
+[core]
+	deltaBaseCacheLimit = 1G
+[init]
+	defaultBranch = main
+[includeIf "gitdir:~/WCode/"]
+	path = ~/WCode/.gitconfig
+[merge]
+	conflictStyle = zdiff3
