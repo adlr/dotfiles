@@ -1,0 +1,14 @@
+;;; .emacs --- personal Emacs configuration
+
+;; C-z: undo (instead of the default suspend-frame)
+(global-set-key (kbd "C-z") #'undo)
+
+;; C-j: expand the word before point from other words in open buffers
+(global-set-key (kbd "C-j") #'dabbrev-expand)
+
+;; C-x g: prompt for a line number and jump to it
+(global-set-key (kbd "C-x g") #'goto-line)
+
+;; M-n / M-p: scroll the text up / down by one line
+(global-set-key (kbd "M-n") #'scroll-up-line)
+(global-set-key (kbd "M-p") #'scroll-down-line)
