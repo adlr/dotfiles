@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+  <wallpaper deleted="false">
+    <name>VNC</name>
+    <filename>/home/adlr/.local/share/backgrounds/grey186.png</filename>
+    <filename-dark>/home/adlr/.local/share/backgrounds/black.png</filename-dark>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#77767B</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
+</wallpapers>
